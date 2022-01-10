@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  background-color: rgb(250 196 103);
+  padding: 20px;
+}
+
+main > img {
+  width: 300px;
+  float: left;
+  margin-right: 30px;
+}
+
+footer {
+  background-color: rgb(255, 177, 42);
+}
+
+footer > h4 {
+  text-align: center;
+}
+
+.main-layout-container {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 100px 1fr auto;
+
+  background-color: rgb(239 166 65);
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+header {
+  background-image: url("img/2a2fcaf2-2634-4510-8825-ff05c87ba99d.png");
+  background-size: cover;
+  box-shadow: 0px -10px 30px 20px black;
+
+  height: 300px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.header-container {
+  color: aliceblue;
+  text-shadow: 2px 2px 2px black;
+  padding: 0px 40px;
+
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1fr 1.5fr;
+
+  height: 100%;
+}
+
+.header-container > nav {
+  grid-row: 2/3;
+}
+
+.header-container > h1 {
+  grid-row: 4/5;
+}
+
+nav > a {
+  margin: 20px;
+  font-size: x-large;
+}
+
+nav > a:visited {
+  color: aliceblue;
+}
